@@ -8,8 +8,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val firstNumber: EditText = findViewById(R.id.insrt_First)
-        val secondNumber: EditText = findViewById(R.id.insrt_Second)
+        val firstNumber: EditText = findViewById(R.id.First_number)
+        val secondNumber: EditText = findViewById(R.id.Second_number)
         val btnSubtract: Button = findViewById(R.id.btn_Subtract)
         val txtNumber: TextView = findViewById(R.id.txt_Number)
 
