@@ -8,5 +8,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val firstNumber: EditText = findViewById(R.id.insrt_First)
+        val secondNumber: EditText = findViewById(R.id.insrt_Second)
+        val btnSubtract: Button = findViewById(R.id.btn_Subtract)
+        val txtNumber: TextView = findViewById(R.id.txt_Number)
+
+        txtNumber.text = ("Hello g").toString()
+
+        btnSubtract.setOnClickListener {
+            txtNumber.text = (firstNumber.text.toString().toInt()-secondNumber.text.toString().toInt()).toString()
+        }
+
+
     }
 }
